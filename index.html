@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Captcha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="view()">
+    
+        <div class="captcha">
+            <img src="refresh.png" id="image" onclick="view()">
+            <canvas id="draw" style="width: 300px;height: 100px;"></canvas>
+            <div class="main">
+            <input id="enter" type="text" placeholder="Enter Captcha">
+            <button id="submit" onclick="check()">Submit</button>
+            </div>
+        </div>
+    
+    <script src="Captcha.js"></script>
+</body>
+</html>
